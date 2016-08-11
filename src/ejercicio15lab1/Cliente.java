@@ -13,10 +13,9 @@ import java.util.Scanner;
  */
 public class Cliente extends Personal_Date {
     private double saldo=0;
-    private Scanner lector;
+    Scanner lector = new Scanner(System.in);
     
     public void Actualizar_Datos(){
-        lector = new Scanner(System.in);
         System.out.println("Digite dir: ");
         setDir(lector.next());
         System.out.println("Digite tel: ");
